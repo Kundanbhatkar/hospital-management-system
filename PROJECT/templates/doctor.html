@@ -8,60 +8,57 @@ Doctors
 
 <div class="container">
 
-<div class="row">
+  <div class="row">
 
-<div class="col-md-4"></div>
-<div class="col-md-4">
-{% with messages=get_flashed_messages(with_categories=true) %}
-{% if messages %}
-{% for category, message in messages %}
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      {% with messages=get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+      {% for category, message in messages %}
 
-<div class="alert alert-{{category}} alert-dismissible fade show" role="alert">
-    {{message}}
-
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button>
-</div>
+      <div class="alert alert-{{category}} alert-dismissible fade show" role="alert">
+        {{message}}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
 
 
-  {% endfor %}
-  {% endif %}
-  {% endwith %}
-<br>
-<h2 class="text-center text-white bg-dark">Doctors Booking</h2>
+      {% endfor %}
+      {% endif %}
+      {% endwith %}
+      <br>
+      <h2 class="text-center text-white bg-dark">Doctors Booking</h2>
 
-<br>
-<form action="/doctors" method="post" class="jumbotron">
+      <br>
+      <form action="/doctors" method="post" class="jumbotron">
 
-<div class="form-group">
+        <div class="form-group">
 
-<input type="email" class="form-control" name="email" value={{current_user.email}}  required>
+          <input type="email" class="form-control" name="email" value={{current_user.email}} required>
 
-</div>
+        </div>
 
-<div class="form-group">
+        <div class="form-group">
 
-<input type="text" class="form-control" name="doctorname" placeholder="Doctor Name" required>
+          <input type="text" class="form-control" name="doctorname" placeholder="Doctor Name" required>
 
-</div>
-
-
-<div class="form-group">
-
-<input type="text" class="form-control" name="dept" placeholder="Doctor Department" required>
-
-</div>
+        </div>
 
 
-  <button type="submit" class="btn btn-dark btn-sm btn-block">Book</button>
+        <div class="form-group">
 
-</form>
+          <input type="text" class="form-control" name="dept" placeholder="Doctor Department" required>
 
-</div>
-<div class="col-md-4"></div>
+        </div>
 
-</div>
+
+        <button type="submit" class="btn btn-dark btn-sm btn-block">Book</button>
+
+      </form>
+
+    </div>
+    <div class="col-md-4"></div>
+
+  </div>
 
 </div>
 
