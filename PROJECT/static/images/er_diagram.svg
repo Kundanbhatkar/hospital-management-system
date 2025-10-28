@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <style>
+    .table { fill: #f8f9fa; stroke: #343a40; stroke-width:1.5 }
+    .title { font: bold 16px sans-serif; fill: #212529 }
+    .col { font: 14px monospace; fill: #495057 }
+    .rel { stroke: #6c757d; stroke-width:2; fill: none }
+  </style>
+
+  <!-- users -->
+  <rect class="table" x="40" y="40" width="300" height="120" rx="8" ry="8" />
+  <text class="title" x="60" y="65">user</text>
+  <text class="col" x="60" y="90">id (PK)</text>
+  <text class="col" x="60" y="110">username</text>
+  <text class="col" x="60" y="130">usertype</text>
+
+  <!-- doctors -->
+  <rect class="table" x="420" y="40" width="300" height="100" rx="8" ry="8" />
+  <text class="title" x="440" y="65">doctors</text>
+  <text class="col" x="440" y="90">did (PK)</text>
+  <text class="col" x="440" y="110">doctorname</text>
+  <text class="col" x="440" y="130">dept</text>
+
+  <!-- patients -->
+  <rect class="table" x="40" y="220" width="520" height="180" rx="8" ry="8" />
+  <text class="title" x="60" y="245">patients</text>
+  <text class="col" x="60" y="270">pid (PK)</text>
+  <text class="col" x="60" y="295">email</text>
+  <text class="col" x="60" y="320">name</text>
+  <text class="col" x="300" y="270">gender</text>
+  <text class="col" x="300" y="295">slot</text>
+  <text class="col" x="300" y="320">dept</text>
+
+  <!-- trigr -->
+  <rect class="table" x="620" y="220" width="420" height="140" rx="8" ry="8" />
+  <text class="title" x="640" y="245">trigr</text>
+  <text class="col" x="640" y="270">tid (PK)</text>
+  <text class="col" x="640" y="295">pid (FK)</text>
+  <text class="col" x="640" y="320">action</text>
+  <text class="col" x="640" y="345">timestamp</text>
+
+  <!-- relationships -->
+  <line class="rel" x1="220" y1="160" x2="220" y2="220" />
+  <text class="col" x="230" y="190">creates</text>
+
+  <line class="rel" x1="560" y1="220" x2="620" y2="290" />
+  <text class="col" x="590" y="250">logs -></text>
+
+  <!-- legend -->
+  <rect x="40" y="420" width="350" height="120" fill="#ffffff" stroke="#dee2e6"/>
+  <text class="title" x="60" y="445">Legend</text>
+  <text class="col" x="60" y="470">PK = Primary Key, FK = Foreign Key</text>
+
+</svg>

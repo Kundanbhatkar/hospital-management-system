@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+  <rect width="100%" height="100%" fill="#f6f8fa"/>
+  <text x="50%" y="48%" text-anchor="middle" font-size="28" fill="#6c757d">Homepage screenshot placeholder</text>
+  <rect x="80" y="80" width="1040" height="520" rx="8" ry="8" fill="#ffffff" stroke="#ced4da" />
+  <text x="140" y="160" font-size="18" fill="#495057">(Run the app and capture a screenshot of the homepage here)</text>
+</svg>
