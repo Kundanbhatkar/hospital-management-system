@@ -87,4 +87,10 @@ The development server will start on http://127.0.0.1:5000. Open that URL in you
 If you'd like me to make further UI improvements, convert to Bootstrap 5, add automated tests, or harden authentication, tell me and I can implement them and push the changes.
 
 ---
+## Contributors
+
+- Kundan Santosh Bhatkar
+
+
+---
 Created/updated by project maintainer.
